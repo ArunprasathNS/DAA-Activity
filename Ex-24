@@ -8,7 +8,6 @@ public class Solution {
             int n = sc.nextInt();
             List<List<Integer>> lines = new ArrayList<>();
 
-            // Read n lines of integers
             for (int i = 0; i < n; i++) {
                 int d = sc.nextInt();
                 List<Integer> line = new ArrayList<>();
@@ -20,10 +19,9 @@ public class Solution {
 
             int q = sc.nextInt();
             for (int i = 0; i < q; i++) {
-                int x = sc.nextInt(); // line number
-                int y = sc.nextInt(); // position in line
+                int x = sc.nextInt();
+                int y = sc.nextInt();
                 
-                // Adjust for zero-based indexing
                 if (x <= lines.size() && y <= lines.get(x - 1).size() && y > 0) {
                     System.out.println(lines.get(x - 1).get(y - 1));
                 } else {
