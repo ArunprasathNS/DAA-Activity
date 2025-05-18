@@ -6,10 +6,8 @@ public class Solution {
         String s = scan.nextLine();
         scan.close();
 
-        // Split string using regex: one or more non-letter characters
         String[] tokens = s.trim().split("[^A-Za-z]+");
 
-        // Check for empty input
         if (s.trim().isEmpty()) {
             System.out.println(0);
         } else {
