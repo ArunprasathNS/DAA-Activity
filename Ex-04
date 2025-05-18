@@ -6,7 +6,7 @@ public class Solution {
 
         int i = scanner.nextInt();
         double d = scanner.nextDouble();
-        scanner.nextLine(); // Consume the leftover newline
+        scanner.nextLine(); 
         String s = scanner.nextLine();
 
         System.out.println("String: " + s);
